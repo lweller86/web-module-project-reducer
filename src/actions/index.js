@@ -24,9 +24,9 @@ export const addToMemory = (total) => {
 export const memoryRecall = (memory) => {
     return ({ type: MEMORY_RECALL, payload: memory });
 }
-export const memoryClear = (memory) => {
-    return ({ type: MEMORY_CLEAR, payload: memory })
+export const memoryClear = () => {
+    return ({ type: MEMORY_CLEAR })
 }
-export const clearDisplay = (total) => {
-    return ({ type: CLEAR_DISPLAY, payload: total })
+export const clearDisplay = () => {
+    return ({ type: CLEAR_DISPLAY })
 }

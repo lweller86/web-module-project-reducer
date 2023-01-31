@@ -35,11 +35,11 @@ function App() {
   const memoryRecallButton = (memory) => {
     dispatch(memoryRecall(memory))
   }
-  const memoryClearButton = (memory) => {
-    dispatch(memoryClear(memory))
+  const memoryClearButton = () => {
+    dispatch(memoryClear())
   }
-  const cEButton = (total) => {
-    dispatch(clearDisplay(total))
+  const cEButton = () => {
+    dispatch(clearDisplay())
   }
 
   return (
@@ -89,7 +89,7 @@ function App() {
             </div>
 
             <div className="row ce_button">
-              <CalcButton value={"CE"} onClick={() => cEButton(state.total) } />
+              <CalcButton value={"CE"} onClick={() => cEButton(state.total)} />
             </div>
 
           </form>

@@ -51,11 +51,11 @@ const reducer = (state, action) => {
                 ...state,
                 memory: 0
             })
-            case (CLEAR_DISPLAY):
-                return({
-                    ...state,
-                    total: 0
-                })
+        case (CLEAR_DISPLAY):
+            return ({
+                ...state,
+                total: 0
+            })
         default:
             return state;
     }
